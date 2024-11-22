@@ -4,7 +4,7 @@ import Image from "next/image"
 const Interests = [
   {
     heading:"interests : ",
-    content:"startups, edtech, gig economy, qc"
+    content:"startups, edtech, gig economy"
   },
   {
     heading:"dev stack i know : ",
@@ -12,15 +12,15 @@ const Interests = [
   },
   {
     heading:"deeptech that excites me : ",
-    content:"applied crypto, zk, privacy, matching algorithms"
+    content:"applied crypto(zk & privacy), matching algorithms"
   },
   {
     heading:"been at : ",
-    content:"undergrad @iitr, tcs summer school @iitd" 
+    content:"undergrad @iitr, tcs winter school @iitd" 
   },
 ]
 
-const pages = ['twocents','music','random'] 
+const pages = ['two-cents','thoughts','non-work']  
 
 const contacts = [
   {
