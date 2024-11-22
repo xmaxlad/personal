@@ -1,6 +1,5 @@
 import Link from "next/link" 
-import Image from "next/image";
-import {clsx} from 'clsx'  
+import Image from "next/image"  
 
 const Interests = [
   {
@@ -49,8 +48,8 @@ export default function Home() {
       <div className="flex flex-col"> 
         <div className="text-base">currently : building <Link href="https://www.sumlearn.com/" className="hover:underline">sumlearn.com</Link>  </div>     
       </div>
-      {Interests.map(interest => (
-        <div className="flex flex-col py-2">
+      {Interests.map((interest,idx) => (
+        <div className="flex flex-col py-2" key={idx}> 
           <div className="text-base">{interest.heading}</div>
           <div className="text-sm">{interest.content}</div>
         </div>
