@@ -20,7 +20,7 @@ const Interests = [
   },
 ]
 
-const pages = ['two-cents','thoughts','non-work']  
+const pages = ['two-cents','non-work']  
 
 const contacts = [
   {
