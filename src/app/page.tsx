@@ -18,6 +18,10 @@ const Interests = [
     heading:"been at : ",
     content:"undergrad @iitr, tcs winter school @iitd" 
   },
+  {
+    heading:"other things that intrigue me : ",
+    content:"(setting up new)planned cities, (setting up new)educational institutions" 
+  },
 ]
 
 const pages = ['two-cents','non-work']  
