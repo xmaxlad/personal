@@ -7,8 +7,16 @@ const Interests = [
     content:"startups, edtech, gig economy"
   },
   {
-    heading:"dev stack i know : ",
-    content:"nextjs(along with prisma, tailwind, postgresql), solidity"
+    heading:"tech stack i know : ",
+    content:"typescript, nextjs, tailwind, shadcn, postgresql, prisma, docker"
+  },
+  {
+    heading:"other technical things(subset of prior): ",
+    content:"server side rendering, react server components, building responsive ui"
+  },
+  {
+    heading:"currently learning : ",
+    content:"websockets, redis"
   },
   {
     heading:"deeptech that excites me : ",
@@ -17,10 +25,6 @@ const Interests = [
   {
     heading:"been at : ",
     content:"undergrad @iitr, tcs winter school @iitd" 
-  },
-  {
-    heading:"other things that intrigue me : ",
-    content:"(setting up new)planned cities, (setting up new)educational institutions" 
   },
 ]
 
@@ -32,8 +36,8 @@ const contacts = [
     link:'https://www.linkedin.com/in/kamalsharma01/' 
   },
   {
-    where:'twt',
-    link:'https://x.com/0xmaxlad'
+    where:'twt/x',
+    link:'https://x.com/xmaxlad'
   }
 ]
 
@@ -60,6 +64,7 @@ export default function Home() {
       ))}  
 
       <div className="flex flex-row py-2">
+      find me on
         {
           contacts.map((contact,idx) => (
             <div className="px-2 hover:underline w-fit" key={idx}> 
