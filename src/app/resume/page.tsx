@@ -26,8 +26,8 @@ export default function Page(){
                 <div className='text-xl mx-auto'>Kamal</div>
                 <div className='mx-auto'>Fullstack developer</div>
                 <div className='flex flex-row gap-x-2'>
-                    {Contacts.map((c)=><div>
-                        <Link href={c.contact}>{c.platform}</Link>
+                    {Contacts.map((c,i)=><div key={i}>
+                        <Link href={c.contact}>{c.platform}</Link> 
                     </div>)}
                 </div>
             </div>
