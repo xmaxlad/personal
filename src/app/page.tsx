@@ -11,10 +11,6 @@ const Interests = [
     content:"typescript, nextjs, tailwind, shadcn, postgresql, prisma, docker"
   },
   {
-    heading:"other technical things(subset of prior): ",
-    content:"server side rendering, react server components, building responsive ui"
-  },
-  {
     heading:"currently learning : ",
     content:"websockets, redis"
   },
@@ -43,15 +39,14 @@ const contacts = [
 
 export default function Home() {
   return (
-    <div className="m-6 font-mono"> 
-    <div className="text-2xl py-1">kamal sharma here</div> 
-
+    <div className='flex justify-center'>
+      <div className="font-mono h-svh"> 
+    <div className="text-xl py-1">kamal sharma here</div> 
     <div className="flex flex-row">
       {pages.map((page,idx) => (    
         <div className='px-2 hover:underline w-fit' key={idx}><Link href={`/${page}`}>{page}</Link></div> 
       ))}
       </div>
-
       <Image src='/self.jpeg' alt="Kamal" width={220} height={180} className="py-1"></Image> 
       <div className="flex flex-col"> 
         <div className="text-base">currently : building <Link href="https://www.sumlearn.com/" className="hover:underline">sumlearn.com</Link>  </div>     
@@ -62,7 +57,6 @@ export default function Home() {
           <div className="text-sm">{interest.content}</div>
         </div>
       ))}  
-
       <div className="flex flex-row py-2">
       find me on
         {
@@ -75,11 +69,8 @@ export default function Home() {
           ))
         }
       </div> 
-
-      <div>
-        mail kamal@sumlearn.com kamalonlywork@gmail.com
-      </div>
-
+      <div>mail kamal@sumlearn.com kamalonlywork@gmail.com</div>
     </div> 
+    </div>
   );
 }
