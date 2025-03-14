@@ -51,7 +51,7 @@ export const Blogs = [
 
 export const Work = [
   {
-    title : `Founder/CTO`,
+    title : `Founder/CTO SumLearn`,
     tech:['react','next','tailwind','postgres','prisma','shadcn'],
     timeline:'June 24 - Feb 25',
     link:`https://www.sumlearn.com/`,

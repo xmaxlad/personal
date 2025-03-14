@@ -16,7 +16,7 @@ export default function Page() {
                 {
                     Work.map((w,i)=>(
                         <div key={i}>
-                            <h3 className='text-xl font-semibold'>{w.title}</h3>
+                            <h3 className='text-xl font-semibold'>{w.title} <Link href={w.link}>Link</Link></h3>
                             <p className='text-gray-600'>{w.timeline}</p>
                             <ul className='list-disc ml-6 mt-2 text-gray-700'>
                                 {w.content.map((c,j)=>(
